@@ -1,6 +1,10 @@
 ---
-import '../styles/global.css'
-import Navigation from '../components/Navigation.astro'
+/** IMPORTS DE COMPONENTES */
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+
+/** IMPORTS DE HOJAS DE ESTILO GLOBALES */
+import "../styles/global.css";
 
 const pageTitle = "Sobre mi";
 
@@ -35,7 +39,7 @@ const skillColor = "navy";
         <meta name="generator" content={Astro.generator} />
         <title>{pageTitle}</title>
 
-        <style define:vars={{skillColor}}>
+        <style define:vars={{ skillColor }}>
             h1 {
                 color: purple;
                 font-size: 4rem;
@@ -44,11 +48,12 @@ const skillColor = "navy";
                 color: var(--skillColor);
                 font-weight: bold;
             }
-
         </style>
     </head>
     <body>
+        <!-- Componente de Navegacion -->
         <Navigation />
+        <!-- Fin -->
 
         <h1>{pageTitle}</h1>
         <h2>... ¡y mi nuevo sitio Astro!</h2>
@@ -95,5 +100,9 @@ const skillColor = "navy";
                 <p>Mi objetivo no son 3 días.</p>
             )
         }
+
+        <!-- Componente Footer -->
+        <Footer />
+        <!-- Fin -->
     </body>
 </html>

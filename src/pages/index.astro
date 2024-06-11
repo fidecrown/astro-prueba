@@ -1,5 +1,10 @@
 ---
-import Navigation from "../components/Navigation.astro"
+/** IMPORTS DE COMPONENTES */
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
+
+/** IMPORTS DE HOJAS DE ESTILO GLOBALES */
+import "../styles/global.css";
 
 const pageTitle = "Página de Inicio"
 ---
@@ -13,7 +18,15 @@ const pageTitle = "Página de Inicio"
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<Navigation />
+
+		<!-- Componente de Navegacion -->
+        <Navigation />
+        <!-- Fin -->
+		 
 		<h1>{pageTitle}</h1>
+
+		<!-- Componente Footer -->
+        <Footer />
+        <!-- Fin -->
 	</body>
 </html>
