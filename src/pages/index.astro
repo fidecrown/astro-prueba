@@ -6,7 +6,7 @@ import Header from "../components/Header.astro";
 /** IMPORTS DE HOJAS DE ESTILO GLOBALES */
 import "../styles/global.css";
 
-const pageTitle = "Página de Inicio"
+const pageTitle = "Página de Inicio";
 ---
 
 <html lang="en">
@@ -18,15 +18,20 @@ const pageTitle = "Página de Inicio"
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-
 		<!-- Componente de Header -->
-        <Header />
-        <!-- Fin -->
-		 
+		<Header />
+		<!-- Fin -->
+
 		<h1>{pageTitle}</h1>
 
 		<!-- Componente Footer -->
-        <Footer />
-        <!-- Fin -->
+		<Footer />
+		<!-- Fin -->
+
+		<!-- Imports Script JS Globales -->
+		<script>
+			import "../scripts/menu.js"
+		</script>
+		<!-- Fin -->
 	</body>
 </html>
